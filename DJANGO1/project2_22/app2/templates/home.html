@@ -1,0 +1,25 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}  home {% endblock%}</title>
+    <!-- <title>home</title> -->
+    <!-- <link rel="stylesheet" href=" {% static 'home.css' %}"> -->
+</head>
+<body>
+    {% block content %}
+    this is my home page
+    <a href="aboutus">GO to about</a>
+    <a href="http://www.facebook.com">fb</a>
+    current date is {{date}}
+    <img src="{% static 'noor.jpg' %}" alt="hdnn">
+    <link rel="stylesheet" href=" {% static 'home.css' %}">
+
+
+    
+    {% endblock %}
+</body>
+</html>

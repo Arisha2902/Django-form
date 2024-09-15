@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form  action="updatedata2" method="post" > -->
+      <form method="post" action="add">
+      {% csrf_token %}
+      <input type="hidden" name="id" value="{{e1.id}}"><br>
+      <input type="text" name="e_nm" value="{{e1.emp_name}}"><br>
+      <input type="text" name="e_id" value="{{e1.emp_id}}"><br>
+      <input type="text" name="e_cont" value="{{e1.emp_contact}}"><br>
+            <input type="submit" value="update">
+              <!-- <a href="newEmp">add New DATA</a> -->
+             <a href="showData">show DATA</a>
+
+    </form>
+</body>
+</html>

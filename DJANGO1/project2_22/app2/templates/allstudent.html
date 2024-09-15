@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <a href="addnew1">Add New Student</a> 
+   <table border="1" width="100" cellspacing="0">
+    <tr><th>Studnt ID</th><th>Name</th><th>age</th><th>action</th></tr>
+    
+    {% for i in Skey %}
+     <tr>{{i.id}}</tr>
+     <tr>{{i.s_name}}</tr>
+     <tr>{{i.s_age}}</tr>
+     <td><a href="">Delete</a></td>
+     {% endfor %}
+</table>
+</body>
+</html>
